@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bt.BeprndencyInjection
+namespace .Bt
 {
-    public interface IExposeServicesAttribute
+    public interface IRemoteServicer
     {
-        Type[] GetExposedServiceTypes(Type targetType);
     }
 }

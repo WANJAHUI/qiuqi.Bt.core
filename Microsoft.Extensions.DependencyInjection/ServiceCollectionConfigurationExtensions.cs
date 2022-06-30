@@ -42,7 +42,11 @@ namespace Microsoft.Extensions.DependencyInjection
             List<JsonFileOptions>.Enumerator enumerator = options.BtConfigurationBuilderOptions.JsonFileOptionsList.GetEnumerator();
             try
             {
-
+                while (enumerator.MoveNext())
+                {
+                    JsonFileOptions current = enumerator.Current;
+                    configurationBuilder.AddJsonFile(current.FileProvider, current.Path, current.Optional, current.ReloadOnChange);
+                }
             }
             finally
             {

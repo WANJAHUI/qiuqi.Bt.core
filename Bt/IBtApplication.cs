@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bt.BeprndencyInjection
+namespace Bt
 {
-    public  interface IScopedDependency
+    public interface IBtApplication : IDisposable
     {
+    
     }
 }

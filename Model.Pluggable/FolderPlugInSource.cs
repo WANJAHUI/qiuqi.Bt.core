@@ -40,6 +40,11 @@ namespace Bt.core.Model.Pluggable
 			this._folder = folder;
 			this._searchOption = searchOption;
         }
+
+		/// <summary>
+		/// 筛选过滤获取程序集集合
+		/// </summary>
+		/// <returns></returns>
 		private List<Assembly> AssemblyList()
         {
 			int a_ = 15;
@@ -78,7 +83,7 @@ namespace Bt.core.Model.Pluggable
 							case 2:
 								source = Directory.EnumerateFiles(Folder, ServiceCollectionRegistrationActionExtensions.b("\uefc4\ue9c6\ue3c8", a_), SearchOption).Where(delegate (string A_0)
 								{
-									//Discarded unreachable code: IL_000b, IL_00ba
+									
 									int a_2 = 3;
 									while (true)
 									{
@@ -188,6 +193,7 @@ namespace Bt.core.Model.Pluggable
 					goto IL_005d;
 			}
 			}
+		//从程序集中获取模块集合
         public TypeList<IBtModule> GetModules()
         {
 			int a_ = 13;

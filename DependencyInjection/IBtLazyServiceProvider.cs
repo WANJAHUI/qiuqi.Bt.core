@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bt.BeprndencyInjection
+namespace Bt.DependencyInjection
 {
-    public  interface IAceLazyServiceProvider
+    public  interface IBtLazyServiceProvider
     {
 		T LazyGetRequiredService<T>();
 

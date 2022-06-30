@@ -31,7 +31,6 @@ namespace Bt.core.Model.Pluggable
 						TypeList<IBtModule> modules = plugInSource.GetModules();
 						return modules.SelectMany(delegate (Type A_0)
 						{
-							//Discarded unreachable code: IL_0037, IL_00a5
 							short num3 = 25415;
 							short num4 = num3;
 							num3 = 25415;

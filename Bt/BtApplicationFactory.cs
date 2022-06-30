@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,12 @@ namespace Bt
 {
     public static class BtApplicationFactory
     {
-        
-                
+        public static IBtApplicationWithExternalServiceProvider Create<TStartupModule>(IServiceCollection, Action<BtFrameworkCreateOptions>[] options)
+        {
+            Type typeFromHandle = typeof(TStartupModule);
+            IAceApplicationWithExternalServiceProvider result = new BtApplicationWithExternalServiceProvider(typeFromHandle, services, options?.ToList());
+
+        }
+
     }
 }

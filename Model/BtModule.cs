@@ -58,7 +58,7 @@ namespace Bt.core.Model
             TypeInfo typeInfo = type.GetTypeInfo();
             return typeInfo.IsClass && !typeInfo.IsAbstract && !typeInfo.IsGenericType && typeof(IBtModule).GetTypeInfo().IsAssignableFrom(type);
         }
-        internal static void Type(Type moduleType)
+        internal static void IsBtType(Type moduleType)
         {
             if (!IsBtModule(moduleType))
             {
