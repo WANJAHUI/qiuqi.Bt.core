@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bt.BeprndencyInjection
 {
-    public  interface IAceLazyServiceProvider
+    public  interface IBtLazyServiceProvider
     {
 		T LazyGetRequiredService<T>();
 

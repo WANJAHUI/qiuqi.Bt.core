@@ -62,7 +62,6 @@ namespace Bt.core.Model
 
         public void AddRely(IBtModuleDescriptor relytor)
         {
-            //AddIfBotContains  (System.Collections.Generic)扩展方法
             _relytor.AddIfNotContains(relytor);
         }
     }
