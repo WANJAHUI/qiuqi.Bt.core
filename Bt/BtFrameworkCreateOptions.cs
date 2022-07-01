@@ -29,11 +29,12 @@ namespace Bt
         {
             get { return btConfigurationBuilderOptions; }
         }
-        public BtFrameworkCreateOptions(IServiceCollection services, PlugInSourceList plugInSources, BtConfigurationBuilderOptions btConfigurationBuilderOptions)
+        public BtFrameworkCreateOptions(IServiceCollection services)
         {
             this.services = services;
-            this.plugInSources = plugInSources;
-            this.btConfigurationBuilderOptions = btConfigurationBuilderOptions;
+            this.plugInSources = new PlugInSourceList();
+            this.btConfigurationBuilderOptions = new BtConfigurationBuilderOptions();
         }
+        
     }
 }

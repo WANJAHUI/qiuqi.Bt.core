@@ -1,5 +1,5 @@
-﻿using Bt.BeprndencyInjection;
-using Bt.core.Model;
+﻿using Bt.core.Model;
+using Bt.DependencyInjection;
 
 // Microsoft.Extensions.DependencyInjection.ServiceCollectionRegistrationActionExtensions
 namespace Microsoft.Extensions.DependencyInjection

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bt
 {
-    public interface IRemoteServicer
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
+    public class ForbidWriteAttribute:Attribute
     {
     }
 }

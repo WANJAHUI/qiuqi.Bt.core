@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Bt.core.Model
 {
-    public class BtModule : IBtModule ,IApplicationInitialization,IOnApplicationShutdown, IPreConfigureServices, IPostConfigureServices, IOnRouteInitialization
+    public class BtModule : IBtModule ,IOnApplicationInitialization, IOnPreApplicationInitialization, IOnPostApplicationInitialization,IOnApplicationShutdown, IPreConfigureServices, IPostConfigureServices, IOnRouteInitialization
     {
         private ServiceConfigurationContext _serviceConfigurationContext;
         protected internal bool SkipAutoServiceRegistration { get; protected set; }

@@ -9,10 +9,11 @@ namespace Bt
 {
     public static class BtApplicationFactory
     {
-        public static IBtApplicationWithExternalServiceProvider Create<TStartupModule>(IServiceCollection, Action<BtFrameworkCreateOptions>[] options)
+        public static IBtApplicationWithExternalServiceProvider Create<TStartupModule>(IServiceCollection services, Action<BtFrameworkCreateOptions>[] options)
         {
             Type typeFromHandle = typeof(TStartupModule);
-            IAceApplicationWithExternalServiceProvider result = new BtApplicationWithExternalServiceProvider(typeFromHandle, services, options?.ToList());
+            IBtApplicationWithExternalServiceProvider result = new BtApplicationWithExternalServiceProvider(typeFromHandle, services, options?.ToList());
+            return result;
 
         }
 

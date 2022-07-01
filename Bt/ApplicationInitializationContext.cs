@@ -1,27 +1,28 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Bt.core.Model
+namespace Bt
 {
-    public class ApplicationInitializationContext
+    public  class ApplicationInitializationContext
     {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         [CompilerGenerated]
-        private IServiceProvider ᜀ;
-
+        private IServiceProvider serviceProvider;
         public IServiceProvider ServiceProvider
         {
-            [CompilerGenerated]
-            get;
-            [CompilerGenerated]
-            set;
-            
+            get { return serviceProvider; }
+            set { serviceProvider = value; }
         }
-
         public ApplicationInitializationContext([NotNull] IServiceProvider serviceProvider)
         {
             ServiceProvider = serviceProvider;
         }
+
     }
 }

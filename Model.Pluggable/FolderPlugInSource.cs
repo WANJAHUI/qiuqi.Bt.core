@@ -308,7 +308,9 @@ namespace Bt.core.Model.Pluggable
 																	num2 = num;
 																	continue;
 																case 6:
+#pragma warning disable CS8620 // 由于引用类型的可为 null 性差异，实参不能用于形参。
 																	typeList.AddIfNotContains(type);
+#pragma warning restore CS8620 // 由于引用类型的可为 null 性差异，实参不能用于形参。
 																	num = 0;
 																	num2 = num;
 																	continue;

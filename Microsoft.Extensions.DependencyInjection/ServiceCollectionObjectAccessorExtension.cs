@@ -14,7 +14,9 @@ namespace Microsoft.Extensions.DependencyInjection
 				default:
 					{
 						bool flag = default(bool);
+#pragma warning disable CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
 						ObjectAccessor<T> result = default(ObjectAccessor<T>);
+#pragma warning restore CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
 						while (true)
 						{
 							short num2;
@@ -86,7 +88,9 @@ namespace Microsoft.Extensions.DependencyInjection
 								case 1:
 								case 4:
 									{
+#pragma warning disable CS8603 // 可能返回 null 引用。
 										return result;
+#pragma warning restore CS8603 // 可能返回 null 引用。
 									}
 								IL_0084:
 									num2 = 0;
@@ -129,8 +133,12 @@ namespace Microsoft.Extensions.DependencyInjection
 				case false:
 				case true:
 					{
+#pragma warning disable CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
 						ObjectAccessor<T> result = default(ObjectAccessor<T>);
+#pragma warning restore CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
+#pragma warning disable CS8603 // 可能返回 null 引用。
 						return result;
+#pragma warning restore CS8603 // 可能返回 null 引用。
 					}
 			}
 		}
@@ -157,7 +165,9 @@ namespace Microsoft.Extensions.DependencyInjection
 				case false:
 				case true:
 					{
+#pragma warning disable CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
 						ObjectAccessor<T> result = default(ObjectAccessor<T>);
+#pragma warning restore CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
 						return result;
 					}
 			}
@@ -166,7 +176,9 @@ namespace Microsoft.Extensions.DependencyInjection
         {
 			int a_ = 8;
 			bool flag = default(bool);
+#pragma warning disable CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
 			ObjectAccessor<T> result = default(ObjectAccessor<T>);
+#pragma warning restore CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
 			flag = services.Any(delegate (ServiceDescriptor A_0)
 			{
 				return A_0.ServiceType == typeof(ObjectAccessor<T>);
@@ -234,7 +246,9 @@ namespace Microsoft.Extensions.DependencyInjection
 				case false:
 				case true:
 					{
+#pragma warning disable CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
 						T result = default(T);
+#pragma warning restore CS8600 // 将 null 字面量或可能为 null 的值转换为非 null 类型。
 						return result;
 					}
 			}

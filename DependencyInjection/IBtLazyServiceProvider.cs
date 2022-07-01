@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Bt.DependencyInjection.IBtLazyServiceProvider
 namespace Bt.DependencyInjection
 {
-    public  interface IBtLazyServiceProvider
+    public interface IBtLazyServiceProvider
     {
 		T LazyGetRequiredService<T>();
 
