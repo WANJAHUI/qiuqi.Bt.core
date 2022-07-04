@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bt.core.DependencyInjection
+namespace Bt.DependencyInjection
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface)]
     public  class TransientDependencyAttribute : Attribute

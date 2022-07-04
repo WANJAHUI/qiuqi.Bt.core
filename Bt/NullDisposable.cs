@@ -26,9 +26,8 @@ namespace Bt
             instance = new NullDisposable();
         }
 
-            public void Dispose()
+        public void Dispose()
         {
-            throw new NotImplementedException();
         }
     }
 }

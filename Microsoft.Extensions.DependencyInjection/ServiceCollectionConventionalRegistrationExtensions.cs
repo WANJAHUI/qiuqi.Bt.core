@@ -1,5 +1,4 @@
 ﻿using Bt;
-using Bt.core.DependencyInjection;
 using Bt.core.Http.Cilent;
 using Bt.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;

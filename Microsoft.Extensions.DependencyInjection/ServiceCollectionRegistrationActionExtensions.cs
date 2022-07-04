@@ -9,9 +9,9 @@ namespace Microsoft.Extensions.DependencyInjection
 
 		public static void OnRegistred(this IServiceCollection services, Action<IOnServiceRegistredContext> registrationAction)
 		{
-			GetᜀserviceRegistrationActionList(services).Add(registrationAction);
+			GetserviceRegistrationActionList(services).Add(registrationAction);
 		}
-		private static ServiceRegistrationActionList GetᜀserviceRegistrationActionList(IServiceCollection A_0)
+		private static ServiceRegistrationActionList GetserviceRegistrationActionList(IServiceCollection A_0)
         {
 			bool flag = default(bool);
 			ServiceRegistrationActionList serviceRegistrationActionList = default(ServiceRegistrationActionList);

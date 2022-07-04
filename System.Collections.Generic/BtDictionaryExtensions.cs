@@ -55,5 +55,12 @@ namespace System.Collections.Generic
         {
             return dictionary.GetOrAdd(key, (TKey k) => factory());
         }
-    }
+        public static TValue GetOrAdd<TKey, TValue>(this ConcurrentDictionary<TKey, TValue> dictionary, TKey key, Func<TValue> factory)
+        {
+            return dictionary.GetOrAdd(key, delegate
+            {
+                return factory();
+            });
+        }
+        }
 }
